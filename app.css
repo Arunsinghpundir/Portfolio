@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+.about {
+  color: #fff;
+  text-align: center;
+  padding: 25px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+  transition: 2s;
+  margin: 5% 10% 5% 10%;
+  display: none;
+}
+
+.about2 {
+  color: #fff;
+  text-align: center;
+  padding: 25px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+  margin: 5% 10% 5% 10%;
+  display: none;
+}
+.about1 {
+  color: #fff;
+  text-align: center;
+  padding: 25px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+  display: none;
+  margin: 5% 10% 5% 10%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(hw2.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  /* filter: blur(2px);
+  -webkit-filter: blur(2px); */
+}
+.card {
+  width: 90%;
+  z-index: 999;
+  max-width: 440px;
+  color: #fff;
+  text-align: center;
+  padding: 25px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+  margin-left: 20%;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+  display: block;
+}
+.card img {
+  width: 140px;
+  border-radius: 50%;
+}
+.card h2 {
+  font-size: 30px;
+  font-weight: 600px;
+  margin-top: 20px;
+}
+.card p {
+  font-size: 18px;
+  margin: 10px auto;
+  max-width: 500px;
+}
+.card .links {
+  width: 350px;
+  margin: 10px 10px;
+}
+.card i {
+  padding: 10px;
+  color: rgba(231, 237, 240, 0.7);
+  transition: 0.3s;
+}
+.card i:hover {
+  padding: 10px;
+  scale: 1.3;
+  color: rgba(231, 237, 240, 1);
+}
+
+#btn1 {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  background: #fff;
+  color: #141313;
+  padding: 10px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+  margin: 10% 20% 0 20%;
+}
+#btn2 {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  background: #fff;
+  color: #141313;
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin: 5%;
+}
+/* .btn: {
+  background-color: rgba(0, 30, 85, 0.5);
+  color: white;
+  scale: 0.9;
+} */
+.btn:hover {
+  background-color: rgba(0, 30, 85, 0.5);
+  scale: 1.1;
+  color: white;
+}
+#btn2 {
+  visibility: hidden;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    background: url(hwMobile.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn:active {
+    background-color: rgba(0, 30, 85, 0.5);
+    scale: 1.1;
+    color: white;
+  }
+  .card {
+    width: 90%;
+    height: 600px;
+    max-width: 350px;
+  }
+  .card img {
+    width: 140px;
+    border-radius: 50%;
+  }
+  .card h2 {
+    font-size: 33px;
+  }
+  .card p {
+    font-size: 25px;
+  }
+  .card .links {
+    width: 268px;
+  }
+  .card i {
+    margin: 15px;
+    scale: 1.8;
+  }
+  .card i:active {
+    padding: 10px;
+  }
+  .btn {
+    font-size: 25px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.71);
+    color: #000000;
+    margin-top: 15%;
+  }
+}
